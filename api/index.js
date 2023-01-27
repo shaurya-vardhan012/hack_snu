@@ -7,6 +7,9 @@ const app = express();
 const authRoute = require("./route/auth");
 const auth_manu = require("./route/m_auth");
 const auth_dis = require("./route/d_auth");
+const ware_detail = require("./route/ware_auth");
+
+
 const cors= require('cors');
 app.use(
     cors({
@@ -57,6 +60,7 @@ mongoose.connect("mongodb+srv://Tanishk:sL7Jiha3FCLmwh7@cluster0.gehhe.mongodb.n
 app.use("/auth",authRoute);
 app.use("/manu_auth",auth_manu);
 app.use("/dis_auth",auth_dis);
+app.use("/ware_detail",ware_detail);
 
 app.listen("5000",()=>{
     console.log("Success");
