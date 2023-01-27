@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Dis_reg from '../Components/Dis_reg/Dis_reg';
 
 const distributor = () => {
   return (
     <div>
-      <h1>Distributor</h1>
+        <Dis_reg/>
     </div>
   )
 }
