@@ -2,7 +2,7 @@ import React from 'react';
 import './Landing.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser,faFileClipboard, faIndustry } from '@fortawesome/free-solid-svg-icons';
-import { faAmazon } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Landing = () => {
   return (
@@ -13,15 +13,15 @@ const Landing = () => {
         <div className="landing-main">
             <div className="landing-card">
                 <FontAwesomeIcon icon={faIndustry} style={{fontSize:"90px",margin:"30px"}}/>
-                <button>Manufacture</button>
+                <Link to='/manufacture' target='_blank'><button>Manufacture</button></Link>
             </div>
             <div className="landing-card">
                 <FontAwesomeIcon icon={faFileClipboard} style={{fontSize:"90px",margin:"30px"}}/>
-                <button>Distributor</button>
+                <Link to='/distributor' target='_blank'><button>Distributor</button></Link>
             </div>
             <div className="landing-card">
                 <FontAwesomeIcon icon={faUser} style={{fontSize:"90px",margin:"30px"}}/>
-                <button>Customer</button>
+                <Link to='/customer' target='_blank'><button>Customer</button></Link>
             </div>
         </div>
     </div>
