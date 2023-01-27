@@ -45,10 +45,15 @@ const DropDown = () => {
           'Zimbabwe': 6994.610599241782, 'Afghanistan': 1853.5575979036626, 'Kiribati': 12471.736656230933, 'Mauritania': 9202.556942961219,
            'Libya': 6278.679970230969}
     const [open,setOpen] =React.useState(false);
+    console.log("hello")
   return (
     <div>
         <select>
-            <option value="hello">hello</option>
+            {
+                country.forEach((value,i)=>(
+                    <option value={value}>{i}</option>
+                ))
+            }
         </select>
       {
 
