@@ -18,4 +18,4 @@ const wareschema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model("warehouse",manuschema);
+module.exports = mongoose.model("warehouse",wareschema);
