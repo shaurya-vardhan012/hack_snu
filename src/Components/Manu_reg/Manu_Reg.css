@@ -3,13 +3,40 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* background-color: aqua; */
     height: 100vh;
     background: url("https://static.vecteezy.com/system/resources/previews/007/277/801/non_2x/factory-inspection-illustration-on-a-background-premium-quality-symbols-icons-for-concept-and-graphic-design-vector.jpg");
     background-size: cover;
 }
 
+#manu_reg_detail input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 200px;
+    background-color: #10313b;
+    color: white;
+    text-align: center;
+}
+
+#manu_reg_detail button
+{
+    padding: 7px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    color: #10313b;
+    border: 1px solid #10313b;
+}
+
 .Mreg{
     outline: none;
     height: 20px;
+}
+
+.manu_login a
+{
+    font-size: 14px;
+    margin-left: 10px;
+    text-decoration: none;
 }
