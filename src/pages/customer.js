@@ -1,9 +1,12 @@
 import React from 'react'
+import Customer from '../Components/Con_reg/Con_reg';
+
 
 const customer = () => {
   return (
     <div>
-      <h1>Customer</h1>
+        
+        <Customer/>
     </div>
   )
 }
