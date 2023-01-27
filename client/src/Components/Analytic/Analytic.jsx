@@ -49,7 +49,7 @@ function Analytic() {
         }
     }
     const fetchData = () => {
-      return fetch("http://localhost:4500/")
+      return fetch("http://localhost:5000/")
             .then((response) => response.json())
             .then((data) => setUser(data));
     }
