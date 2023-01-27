@@ -16,9 +16,9 @@ const Manu_log = () => {
 
   return (
     <div id='manu_reg_detail'>
-      <input className='Mreg' type="text" placeholder='enter a manufacturer id' onChange={(e)=>{setId(e.target.value)}}/>
+      <input className='Mreg' type="text" placeholder='Enter a manufacturer id' onChange={(e)=>{setId(e.target.value)}}/>
       <br />
-      <input className='Mreg' type="password" placeholder='enter password' onChange={(e)=>{setPass(e.target.value)}}/>
+      <input className='Mreg' type="password" placeholder='Enter password' onChange={(e)=>{setPass(e.target.value)}}/>
       <br />
       <button onClick={handlesubmit}>Login</button>
     </div>

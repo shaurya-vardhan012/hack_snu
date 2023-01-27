@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import "./Dis_reg.css"
+import "./Dis_reg.css";
+import { Link } from 'react-router-dom';
 
 const Dis_reg = () => {
 
@@ -17,15 +18,19 @@ const Dis_reg = () => {
 
   return (
     <div id='dis_reg_detail'>
-      <input className='Dreg' type="text" placeholder='enter a distributor id' onChange={(e)=>{setId(e.target.value)}}/>
+      <input className='Dreg' type="text" placeholder='Enter a distributor id' value={id} onChange={(e)=>{setId(e.target.value)}}/>
       <br />
-      <input type="text" className='Dreg' placeholder='enter Distributor name' onChange={(e)=>{setName(e.target.value)}}/>
+      <input type="text" className='Dreg' placeholder='Enter Distributor name' value={name} onChange={(e)=>{setName(e.target.value)}}/>
       <br />
-      <input className='Dreg' type="password" placeholder='create password' onChange={(e)=>{setPass(e.target.value)}}/>
+      <input className='Dreg' type="password" placeholder='Create password' value={pass} onChange={(e)=>{setPass(e.target.value)}}/>
       <br />
-      <input className='Dreg' type="password" placeholder='confirm password' onChange={(e)=>{setCpass(e.target.value)}}/>
+      <input className='Dreg' type="password" placeholder='Confirm password' value={cpass} onChange={(e)=>{setCpass(e.target.value)}}/>
       <br />
       <button onClick={handlesubmit}>Register</button>
+      <div style={{marginTop:"50px",display:"flex"}} className="manu_login">
+        <h5>Already have a account ?</h5>
+        <Link to='/distributer_login'>Login</Link>
+      </div>
     </div>
   )
 }

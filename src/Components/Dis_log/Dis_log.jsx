@@ -22,6 +22,7 @@ const Dis_log = () => {
       <input className='Dreg' type="password" placeholder='enter password' onChange={(e)=>{setPass(e.target.value)}}/>
       <br />
       <button onClick={handlesubmit}>Register</button>
+      
     </div>
   )
 }
