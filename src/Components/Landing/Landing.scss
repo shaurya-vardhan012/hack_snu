@@ -1,0 +1,22 @@
+
+.landing-container
+{
+    min-height: 100vh;
+    background-color: rgb(196, 196, 182);
+    .landing-main
+    {
+        width: 80%;
+        margin: auto;
+        height: auto;
+        position: absolute;
+        top: 22%;
+        left: 10%;
+        // background-color: black;
+        border: 1px solid black;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
