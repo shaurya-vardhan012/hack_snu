@@ -43,21 +43,15 @@ const DropDown = () => {
           'Ukraine': 5243.903142987267, 'United Arab Emirates': 2607.705859286377, 'United Kingdom': 7670.901265264174, 'Uruguay': 15375.18456269093, 
           'Vanuatu': 10412.234687212993, 'Venezuela': 15216.578562864515, 'Yemen': 3265.3984505637936, 'Zambia': 6735.016570859557, 
           'Zimbabwe': 6994.610599241782, 'Afghanistan': 1853.5575979036626, 'Kiribati': 12471.736656230933, 'Mauritania': 9202.556942961219,
-           'Libya': 6278.679970230969}
-    const [open,setOpen] =React.useState(false);
+           'Libya': 6278.679970230969};
     console.log("hello")
   return (
     <div>
         <select>
-            {
-                country.forEach((value,i)=>(
-                    <option value={value}>{i}</option>
-                ))
-            }
+        {Object.keys(country).map(key => (
+          <option value={country[key]}>{key}</option>
+        ))}
         </select>
-      {
-
-      }
     </div>
   )
 }
