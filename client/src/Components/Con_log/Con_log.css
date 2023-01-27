@@ -1,0 +1,15 @@
+#con_reg_detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: aqua; */
+    height: 100vh;
+    background: url("https://static.vecteezy.com/system/resources/previews/007/277/801/non_2x/factory-inspection-illustration-on-a-background-premium-quality-symbols-icons-for-concept-and-graphic-design-vector.jpg");
+    background-size: cover;
+}
+
+.Creg{
+    outline: none;
+    height: 20px;
+}
