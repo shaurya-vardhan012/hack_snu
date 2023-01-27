@@ -6,6 +6,7 @@ import Manufacture from "./pages/manufacture";
 import Manufacture_login from "./pages/manufacture_login";
 import Distributer_login from "./pages/distributer_login";
 import Customer_login from "./pages/customer_login";
+// import Analytic from "./Components/Analytic/Analytic";
 
 function App() {
   return (

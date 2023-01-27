@@ -6,7 +6,7 @@ const Con_log = () => {
 
     const handlesubmit = ()=>{
         console.log("a");
-       console.log(name);
+      //  console.log(name);
     }
 
     const [id,setId] = useState("");

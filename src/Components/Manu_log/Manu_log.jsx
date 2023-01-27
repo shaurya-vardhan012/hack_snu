@@ -5,7 +5,7 @@ import "./Manu_log.css"
 const Manu_log = () => {
 
     const handlesubmit = ()=>{
-       console.log(name);
+      //  console.log(name);
     }
 
     const [id,setId] = useState("");
