@@ -60,7 +60,7 @@ function Analytic() {
 		<>
 			<h1 className="text-heading">
 				Line Chart Using Rechart
-			</h1>
+			</h1> 
 			<ResponsiveContainer width="100%" aspect={3}>
 				<LineChart data={user} margin={{ right: 300 }}>
 					<CartesianGrid />
