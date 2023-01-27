@@ -13,7 +13,7 @@ const Landing = () => {
         <div className="landing-main">
             <div className="landing-card">
                 <FontAwesomeIcon icon={faIndustry} style={{fontSize:"90px",margin:"30px"}}/>
-                <Link to='/manufacture' target='_blank'><button>Manufacture</button></Link>
+                <Link to='/manufacture' ><button>Manufacture</button></Link>
             </div>
             <div className="landing-card">
                 <FontAwesomeIcon icon={faFileClipboard} style={{fontSize:"90px",margin:"30px"}}/>

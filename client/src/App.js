@@ -8,8 +8,13 @@ import Distributer_login from "./pages/distributer_login";
 import Customer_login from "./pages/customer_login";
 // import Analytic from "./Components/Analytic/Analytic";
 
+import { useContext } from 'react';
+import loginContext from './context/usecontext';
+import Context from './context/context'
+
 function App() {
   return (
+    <Context>
     <div>
       <Routes>
         <Route path="/" element={<Landing/>}/>
@@ -21,6 +26,7 @@ function App() {
         <Route path="/customer_login" element={<Customer_login/>}/>
       </Routes>
     </div>
+    </Context>
   );
 }
 

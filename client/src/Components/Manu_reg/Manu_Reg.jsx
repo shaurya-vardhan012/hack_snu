@@ -2,12 +2,25 @@ import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import "./Manu_Reg.css"
+import axios from "axios"
 
 const Manu_Reg = () => {
 
-    const handlesubmit = ()=>{
-       console.log(name);
-    }
+
+    const handlesubmit = async (e)=>{ 
+      console.log("clicked");
+      e.preventDefault();
+      try{
+          const res = await axios.post("http://localhost:5000/manu_auth/register",{
+              manu_id: id,
+              manu_name: name,
+              password: pass,
+             });
+             console.log(res.data);
+      }catch(error){
+          console.log(error);
+      }
+  }
 
     const [id,setId] = useState("");
     const [name,setName] = useState("");
