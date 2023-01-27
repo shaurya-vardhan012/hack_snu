@@ -6,7 +6,7 @@ import Manufacture from "./pages/manufacture";
 import Manufacture_login from "./pages/manufacture_login";
 import Distributer_login from "./pages/distributer_login";
 import Customer_login from "./pages/customer_login";
-// import Analytic from "./Components/Analytic/Analytic";
+import Analytic from "./Components/Analytic/Analytic";
 
 import { useContext } from 'react';
 import loginContext from './context/usecontext';
@@ -18,6 +18,7 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Landing/>}/>
+        <Route path="/analytic" element={<Analytic/>}/>
         <Route path="/customer" element={<Customer/>}/>
         <Route path="/distributor" element={<Distributor/>}/>
         <Route path="/manufacture" element={<Manufacture/>}/>

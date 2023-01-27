@@ -1,11 +1,14 @@
 import React from 'react'
 import { useState ,useContext} from 'react'
 import "./Manu_log.css"
-import axios from "axios"
+import axios from "axios";
+import {useNavigate} from 'react-router-dom';
+
 import loginContext from '../../context/usecontext'
 
 
 const Manu_log = () => {
+    const navigate = useNavigate();
 
     const [id,setId] = useState("");
     const [pass,setPass] = useState("");
@@ -25,6 +28,7 @@ const Manu_log = () => {
         }catch(error){
             console.log(error);
         }
+        navigate('/choose');
     }
    
   return (
