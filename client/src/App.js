@@ -11,7 +11,8 @@ import Analytic from "./pages/analytic";
 
 import { useContext } from 'react';
 import loginContext from './context/usecontext';
-import Context from './context/context'
+import Context from './context/context';
+import Predict from "./pages/predict";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Landing/>}/>
         <Route path="/analytic" element={<Analytic/>}/>
         <Route path="/choose" element={<Choose/>}/>
+        <Route path="/predict" element={<Predict/>}/>
         <Route path="/customer" element={<Customer/>}/>
         <Route path="/distributor" element={<Distributor/>}/>
         <Route path="/manufacture" element={<Manufacture/>}/>

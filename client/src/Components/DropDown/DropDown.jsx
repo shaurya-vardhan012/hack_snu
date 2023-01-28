@@ -1,6 +1,13 @@
 import React from 'react'
 
 const DropDown = () => {
+  const handleClick=()=>{
+    console.log({volume,quantity,distance});
+    localStorage.setItem("product",JSON.stringify({volume,quantity,distance}));
+  };
+  const [volume,setVolume] = React.useState(0);
+  const [quantity,setQuantity] = React.useState(0);
+  const [distance,setDistance] = React.useState(0);
     const country={'Albania': 5940.830501483217, 'Algeria': 7758.777324519019, 'Andorra': 7471.909622514216, 
     'Anguilla': 14050.988815935965, 'Antigua and Barbuda': 14042.410697290496, 'Argentina': 15943.888517059571, 
     'Armenia': 3877.2386378447472, 'Aruba': 15021.93245310151, 'Australia': 7821.93504610961, 'Austria': 6437.2690084331625, 
@@ -44,14 +51,21 @@ const DropDown = () => {
           'Vanuatu': 10412.234687212993, 'Venezuela': 15216.578562864515, 'Yemen': 3265.3984505637936, 'Zambia': 6735.016570859557, 
           'Zimbabwe': 6994.610599241782, 'Afghanistan': 1853.5575979036626, 'Kiribati': 12471.736656230933, 'Mauritania': 9202.556942961219,
            'Libya': 6278.679970230969};
-    console.log("hello")
+    // console.log("hello")
+    // console.log(distance);
   return (
-    <div>
-        <select>
-        {Object.keys(country).map(key => (
-          <option value={country[key]}>{key}</option>
-        ))}
-        </select>
+    <div style={{minHeight:"100vh",display:"flex",justifyContent:"center",alignItems:"center"}}>
+      <form>
+        <input type="number" name="" id="" onChange={(e)=>{setVolume(e.target.value)}} value={volume} placeholder='Volume'/><br />
+        <input type="number" name="" id="" onChange={(e)=>{setQuantity(e.target.value)}} value={quantity} placeholder='Quantity' /> <br />
+          <select defaultValue={distance} onChange={e=>{setDistance(e.target.value)}}>
+
+          {Object.keys(country).map(key => (
+            <option value={country[key]}>{key}</option>
+          ))}
+          </select><br />
+          <input type="submit" onClick={handleClick} value="Submit" />
+        </form>
     </div>
   )
 }
